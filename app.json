@@ -4,19 +4,18 @@
   ],
   "description": "A template to create and deploy your ruboty on slack.",
   "env": {
-    "SLACK_PASSWORD": {
-      "description": "The password of your ruboty's slack account."
+    "SLACK_TOKEN": {
+      "description": "Account's token. get one on https://api.slack.com/web#basics"
     },
-    "SLACK_ROOM": {
-      "description": "Comma-separated room names your ruboty first joins in.",
-      "value": "general"
+    "SLACK_EXPOSE_CHANNEL_NAME": {
+      "description": "If this set to 1, message.to will be channel name instead of id (optional)."
     },
-    "SLACK_TEAM": {
-      "description": "The name of your slack team."
+    "SLACK_IGNORE_GENERAL": {
+      "description": "If this set to 1, bot ignores all messages on #general channel (optional)",
+      "value": "_general"
     },
-    "SLACK_USERNAME": {
-      "description": "The username of your ruboty's slack account.",
-      "value": "ruboty"
+    "SLACK_GENERAL_NAME": {
+      "description": "Set general channel name if your Slack changes general name (optional)."
     },
     "TZ": {
       "description": "Timezone.",
