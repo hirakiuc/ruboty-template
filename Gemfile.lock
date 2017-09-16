@@ -38,6 +38,8 @@ GEM
       activesupport
       chrono
       ruboty (>= 0.2.0)
+    ruboty-echo (0.1.0)
+      ruboty
     ruboty-redis (0.0.6)
       redis
       redis-namespace
@@ -69,6 +71,7 @@ PLATFORMS
 DEPENDENCIES
   rake
   ruboty-cron
+  ruboty-echo
   ruboty-redis
   ruboty-slack_rtm
 
